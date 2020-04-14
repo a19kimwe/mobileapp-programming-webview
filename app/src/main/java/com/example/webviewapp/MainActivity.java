@@ -36,9 +36,9 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        myWebView = findViewById(R.id.min_webView);
+        minWebView = findViewById(R.id.min_webView);
 
-        WebSettings webSettings = myWebView.getSettings();
+        WebSettings webSettings = minWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
     }
 
@@ -71,5 +71,4 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-    private WebView myWebView;
 }
